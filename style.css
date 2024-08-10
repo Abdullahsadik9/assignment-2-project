@@ -40,8 +40,9 @@ body {
 header {
   max-width: 100%;
   color: #ffffff;
-  margin: 0 auto;
+  margin: 0px auto;
   background-color: #202020;
+  padding-top: 60px;
 }
 .nav-container {
   justify-content: space-around;
@@ -206,51 +207,42 @@ header {
 /* team section */
 .team-section {
   max-width: 80%;
-  margin: 0 auto;
+  margin: 100px auto;
 }
-.team-container {
-  margin-bottom: 100px;
+.team-h1 {
+  font-weight: 800;
+  font-size: 3rem;
+  margin-bottom: 5px;
+  margin-top: 80px;
+  text-align: center;
+}
+.team-p {
+  font-weight: 50px;
+  font-size: 0.7rem;
+  color: rgba(211, 211, 211, 0.377);
+  margin-bottom: 75px;
+  text-align: center;
 }
 .team-images {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
   background-color: #222222;
-  padding: 20px 5px;
   border-radius: 20px;
-  padding-left: 26px;
+  padding: 30px;
 }
-/* .team-images {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  background-color: #222222;
-  padding: 31px 30px;
-  border-radius: 20px;
-  padding-left: 34px;
-  width: 83%;
-  margin: 0 auto;
-} */
 .team-img img {
   width: 100%;
   height: 100%;
   border-radius: 20px;
 }
 .team-img {
-  /* border-radius: 20px; */
   position: relative;
-  width: 310px;
-  height: 276px;
 }
 .overly-text {
   position: absolute;
-  /* bottom: 115px; */
-  top: 230px;
+  top: 270px;
   left: 15px;
-}
-.overly-text h4 {
-  margin: 0;
-  padding: 0;
 }
 .overly-text p {
   font-weight: 50px;
@@ -259,27 +251,13 @@ header {
   margin: 0;
   padding: 0;
 }
-.team-content {
-  text-align: center;
-}
-.team-content h1 {
-  font-weight: 800;
-  font-size: 3rem;
-  margin-bottom: 5px;
-  margin-top: 80px;
-}
-.team-content p {
-  font-weight: 50px;
-  font-size: 0.7rem;
-  color: rgba(211, 211, 211, 0.377);
-  margin-bottom: 75px;
-}
+
 /* bmi section */
 .bmi-content {
   justify-content: space-around;
   background-color: rgb(44, 44, 44);
   max-width: 100%;
-  height: 320px;
+  height: auto;
   margin: 0 auto;
   padding-top: 30px;
 }
@@ -401,7 +379,10 @@ footer {
   html {
     font-size: 12px;
   }
-  .hero-content {
+  .hero-content,
+  .habit-images,
+  .run-container,
+  .bmi-content {
     flex-direction: column;
   }
   .nav-links {
@@ -427,5 +408,10 @@ footer {
   }
   .header-btn {
     justify-content: space-around;
+  }
+  /* run */
+  .run-img img {
+    height: auto;
+    width: 100%;
   }
 }

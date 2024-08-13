@@ -38,21 +38,23 @@ body {
 }
 /* nav section */
 header {
-  max-width: 100%;
+  width: 100%;
   color: #ffffff;
-  margin: 0px auto;
+  margin: 0 auto;
   background-color: #202020;
   padding-top: 60px;
 }
 .nav-container {
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  width: 80%;
+  margin: 0 auto;
 }
 .nav-title {
   font-style: italic;
   font-size: 2rem;
   font-weight: 800;
-  margin-left: -80px;
+  /* margin-left: -80px; */
 }
 /* <!-- responsive icon --> */
 .header-icon {
@@ -171,6 +173,9 @@ header {
 .habit-image {
   margin: 0 auto;
 }
+.hbt-img {
+  margin-bottom: 20px;
+}
 /* run section */
 .run-container {
   max-width: 80%;
@@ -233,17 +238,26 @@ header {
 }
 .team-img img {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   border-radius: 20px;
+}
+.jhamela {
+  height: 100%;
 }
 .team-img {
   position: relative;
 }
 .overly-text {
   position: absolute;
+  top: 90%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+/* .overly-text {
+  position: absolute;
   top: 270px;
   left: 15px;
-}
+} */
 .overly-text p {
   font-weight: 50px;
   font-size: 0.7rem;
@@ -264,6 +278,7 @@ header {
 
 .bmi-chart h1 {
   text-align: center;
+  margin-bottom: 20px;
 }
 table,
 th,
@@ -285,7 +300,7 @@ td {
 }
 
 .bmi-calculator h1 {
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 .bmi-calculator p {
   font-weight: 50px;
@@ -363,6 +378,7 @@ td {
   color: #ffffff;
   border: none;
   font-size: 1rem;
+  margin-bottom: 20px;
 }
 
 /* footer section */
@@ -390,6 +406,10 @@ footer {
   width: 80%;
   border-top: 0.1px solid gray;
   text-align: center;
+  padding: 20px;
+}
+.ftr {
+  margin-bottom: 15px;
 }
 /* responsive section */
 @media screen and (max-width: 576px) {
@@ -399,14 +419,21 @@ footer {
   .hero-content,
   .habit-images,
   .run-container,
-  .bmi-content {
+  .bmi-content,
+  .footer {
     flex-direction: column;
   }
+  /* .nav-container {
+    justify-content: space-between;
+  } */
   .nav-links {
     display: none;
   }
   .header-icon {
     display: block;
+  }
+  .fa-solid {
+    font-size: 20px;
   }
   .video {
     width: 100px;
@@ -419,12 +446,12 @@ footer {
     left: 34px;
   }
   .hero-img {
-    width: 80%;
+    width: 100%;
     background-position: center;
     background-size: cover;
   }
   .header-btn {
-    justify-content: space-around;
+    justify-content: space-between;
   }
   /* run */
   .run-img img {
@@ -439,6 +466,9 @@ footer {
     margin-bottom: 30px;
   }
   /* bmi */
+  .bmi-content {
+    padding-top: 5px;
+  }
   .bmi-calculator {
     margin: 40px;
   }
@@ -453,6 +483,12 @@ footer {
   }
   .bmi-chart h1 {
     text-align: left;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+  }
+  .team-images {
+    justify-content: center;
+  }
+  .hide {
+    display: none;
   }
 }

@@ -308,10 +308,11 @@ td {
 
 .input-four {
   width: 282.5px;
-  height: 48px;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.1);
+  height: 30px;
+  border-radius: 5px;
+  background-color: rgb(58, 57, 57);
   border: none;
+  color: rgba(211, 211, 211, 0.377);
 }
 /* .hgt {
   border-radius: 5px;
@@ -334,16 +335,16 @@ td {
   padding-left: 15px;
   border: none;
 }
-.gender {
+/* .gender {
   width: 50%;
   border-radius: 5px;
-  /* height: 30px; */
+  height: 30px;
   background-color: rgb(58, 57, 57);
   background: 1px solid lightgray;
   padding-left: 15px;
   color: rgba(211, 211, 211, 0.377);
   border: none;
-}
+} */
 .activity {
   width: 100%;
   height: 30px;
@@ -430,14 +431,28 @@ footer {
     height: auto;
     width: 100%;
   }
+  .run-content {
+    text-align: center;
+  }
+  .run-btn {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  /* bmi */
   .bmi-calculator {
-    margin: 31px;
+    margin: 40px;
   }
-  .bmi-height {
-    justify-content: space-between;
+  .input-four {
     width: 100%;
   }
-  .hgt {
-    width: 100%;
+  .gender {
+    width: 175px;
+  }
+  .bmi-chart {
+    margin: 40px;
+  }
+  .bmi-chart h1 {
+    text-align: left;
+    padding-bottom: 20px;
   }
 }

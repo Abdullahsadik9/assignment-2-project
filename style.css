@@ -441,12 +441,18 @@ footer {
     top: 60px;
     left: 185px;
   }
+  /* .video {
+    width: 100px;
+    height: 60px;
+    top: 60px;
+    left: 211px;
+  } */
   .video-2 {
     top: 190px;
     left: 34px;
   }
   .hero-img {
-    width: 100%;
+    /* width: 100%; */
     background-position: center;
     background-size: cover;
   }

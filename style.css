@@ -278,6 +278,20 @@ header {
   margin: 0 auto;
   padding-top: 30px;
 }
+.bmi-h1 {
+  font-weight: 800;
+  font-size: 3rem;
+  margin-bottom: 5px;
+  margin-top: 80px;
+  text-align: center;
+}
+.bmi-p {
+  font-weight: 50px;
+  font-size: 0.7rem;
+  color: rgba(211, 211, 211, 0.377);
+  margin-bottom: 75px;
+  text-align: center;
+}
 
 .bmi-chart h1 {
   text-align: center;
@@ -478,8 +492,8 @@ iframe {
     font-size: 20px;
   }
   .video {
-    width: 100px;
-    height: 80px;
+    width: 140px;
+    height: 70px;
     top: 60px;
     left: 185px;
   }

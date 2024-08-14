@@ -331,6 +331,7 @@ td {
   background-color: rgb(58, 57, 57);
   border: none;
   color: rgba(211, 211, 211, 0.377);
+  padding: 0 10px;
 }
 /* .hgt {
   border-radius: 5px;
@@ -523,7 +524,7 @@ iframe {
     width: 100%;
   }
   .gender {
-    width: 175px;
+    width: 167px;
   }
   .bmi-chart {
     margin: 40px;
@@ -547,5 +548,11 @@ iframe {
     width: 100%;
     height: auto;
     margin-top: 20px;
+  }
+  .run-content {
+    text-align: left;
+  }
+  .bmi-weight input {
+    width: 168px;
   }
 }

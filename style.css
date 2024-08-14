@@ -112,21 +112,22 @@ header {
 .video {
   border: none;
   border-radius: 12px;
-  width: 193px;
+  width: 180px;
   height: 80px;
   backdrop-filter: blur(20px);
-  padding-left: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 20px;
   position: relative;
   top: 150px;
   left: 230px;
 }
 .video h3 {
   font-size: 2rem;
-  margin: 0;
-  margin-top: 5px;
+  line-height: 120%;
 }
 .video p {
   font-size: 0.8rem;
+  line-height: 24px;
 }
 .video-2 {
   border: none;
@@ -240,7 +241,9 @@ header {
   width: 100%;
   /* height: 100%; */
   border-radius: 20px;
+  object-fit: cover;
 }
+
 .jhamela {
   height: 100%;
 }
@@ -411,6 +414,43 @@ footer {
 .ftr {
   margin-bottom: 15px;
 }
+/* community-section */
+.community-container {
+}
+.community-section {
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+  background-color: #ffffff;
+  /* background-color: rgb(44, 44, 44); */
+  padding: 30px;
+  border-radius: 20px;
+}
+.community-section h1 {
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 4rem;
+  color: #000000;
+}
+.community-section button {
+  font-size: 2rem;
+  background-color: #000000;
+  border-radius: 10px;
+  padding: 10px 25px;
+  color: #ffffff;
+  /* color: #ffffff; */
+  border: none;
+  font-size: 1rem;
+  margin-top: 30px;
+}
+.community-section button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+iframe {
+  border-radius: 20px;
+}
+
 /* responsive section */
 @media screen and (max-width: 576px) {
   html {
@@ -420,7 +460,8 @@ footer {
   .habit-images,
   .run-container,
   .bmi-content,
-  .footer {
+  .footer,
+  .community-section {
     flex-direction: column;
   }
   /* .nav-container {
@@ -496,5 +537,15 @@ footer {
   }
   .hide {
     display: none;
+  }
+  .community-section {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  iframe {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
   }
 }
